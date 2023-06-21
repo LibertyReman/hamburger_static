@@ -1,3 +1,8 @@
+body {
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
+  font-weight: bold;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -5,5 +10,54 @@ a {
 
 li {
   list-style: none;
+}
+
+.l-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 215px;
+  background-color: #FFF7EF;
+}
+.l-header__logo {
+  margin-bottom: 40px;
+  color: #707070;
+  font-size: 40px;
+}
+
+.p-gmenu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 8px 8px 11px 0px;
+}
+
+.p-menu span {
+  color: #707070;
+  font-size: 20px;
+}
+
+.p-search {
+  display: flex;
+  height: 46px;
+}
+.p-search input[type=text] {
+  width: 57.6vw;
+  margin-right: 16px;
+  padding-left: 38px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  background-image: url("../../img/search.png");
+  background-position: 9px center;
+  background-size: 24px, 24px;
+}
+.p-search input[type=submit] {
+  width: 24vw;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background-color: #F2EDE9;
+  color: #707070;
+  font-family: "M PLUS 1p";
 }
 /*# sourceMappingURL=style.css.map */

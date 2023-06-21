@@ -1,0 +1,16 @@
+@use "../../foundation/mixin";
+
+
+.p-gmenu {
+	@include mixin.dbg-border(lightgreen, 3, 1);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 8px 8px 11px 0px;
+
+}
+
+
+
+
+

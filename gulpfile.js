@@ -18,7 +18,7 @@ const sassBuild = (done) => {
 };
 
 const watchFiles = () => {
-  watch('./scss/*.scss', sassBuild);
+  watch('./scss/**/*.scss', sassBuild);
   watch(['./css/*.css', './js/*.js', './*.html'], bsReload);
 };
 

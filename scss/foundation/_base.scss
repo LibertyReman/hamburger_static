@@ -1,0 +1,17 @@
+@use "../foundation/mixin";
+
+body {
+  font-family: 'Roboto', 'M PLUS 1p', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: inherit; // 親のスタイルを継承
+  text-decoration: none; // URLリンクの下線を消す
+}
+
+li {
+  list-style: none; // 点(・)を削除
+}
+
+

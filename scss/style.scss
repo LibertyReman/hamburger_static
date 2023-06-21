@@ -1,50 +1,40 @@
-@use "sass:math";
+@charset "utf-8";
 
-// variables
-$dbg: 0;
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@forward "foundation/mixin";
+@forward "foundation/variable";
+@forward "foundation/base";
 
-// mixin
-@mixin dbg-border($color: blue, $px: 1, $switch: 1) {
-  @if ($switch == 1 and $dbg == 1) {
-    outline: #{$px}px solid $color;
-    outline-offset: -#{$px}px;
-  }
-}
+// ==========================================================================
+// Layout
+// ==========================================================================
+@forward "layout/header";
+//@forward "layout/footer";
 
-@mixin dbg-bgcolor($color: blue, $switch: 1) {
-  @if ($switch == 1 and $dbg == 1) {
-    background-color: $color;
-  }
-}
+// ==========================================================================
+// Object
+// ==========================================================================
+// ---------------------------------------
+// Component
+// ---------------------------------------
+//@forward "object/component/button";
+//@forward "object/component/grid";
 
-@mixin breakpoint($device) {
-  @if ($device != "sp" and $device != "tab") {
-    @warn "Invalid Argument";
-  }
+// ---------------------------------------
+// Project
+// ---------------------------------------
+@forward "object/project/gmenu";
+@forward "object/project/menu";
+@forward "object/project/search";
+//@forward "object/project/copyright";
+//@forward "object/project/hamburger";
+//@forward "object/project/mainvisual";
 
-  @if $device == sp {
-    @media (max-width:767px) { // 横幅が767px以下の時
-      @content;
-    }
-  }
-  @if $device == tab {
-    @media (max-width:1200px) { // 横幅が1200px以下の時
-      @content;
-    }
-  }
-}
-
-
-body {
-}
-
-a {
-  color: inherit; // 親のスタイルを継承
-  text-decoration: none; // URLリンクの下線を消す
-}
-
-li {
-  list-style: none; // 点(・)を削除
-}
+// ---------------------------------------
+// Utility
+// ---------------------------------------
+//@forward "object/utility/display";
 
 
