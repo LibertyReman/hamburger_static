@@ -1,7 +1,7 @@
 @use "../../foundation/mixin";
 @use "../../foundation/variable";
 
-.p-menu {
+.p-menu-button {
   span {
     @include mixin.dbg-border(black, 1, 1);
     color: variable.$color-gray;
