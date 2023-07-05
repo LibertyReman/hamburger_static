@@ -16,21 +16,56 @@
   <body>
     <header class="l-header"> <!-- flex column center タテ並び真ん中 -->
       <div class="p-gmenu"> <!-- flex row flex-end ヨコ並び右端 -->
-        <button class="p-menu-button js-menu">
+        <button class="p-menu-button js-menu-button">
           <span>Menu</span>
         </button>
       </div>
 
       <h1 class="l-header__logo">Hamburger</h1>
 
-      <form action="archive_search.html" method="post" class="p-search"> <!-- flex row ヨコ並び -->
-        <input type="text" placeholder="">
-        <input type="submit" value="検索">
+      <form action="archive_search.html" method="post" class="p-search"> <!-- flex row ヨコ並び --> <!-- TODO: ページ移動 -->
+        <input type="text" placeholder=""> <!-- TODO: c-form -->
+        <input type="submit" value="検索"> <!-- TODO: c-form -->
       </form>
-
     </header>
 
     <main>
+      <article>
+        <div class="p-mainvisual"> <!-- flex row center ヨコ並び真ん中-->
+          <h2 class="p-mainvisual__title">ダミーサイト</h2>
+        </div>
+
+        <ul>
+          <li class="p-content p-content--img-takeout"> <!-- flex column space-between タテ並び両端から均等に配置 -->
+            <h2 class="p-content__title">Take Out</h2>
+            <div class="p-content__cards">
+              <dl class="p-content__card">
+                <dt class="p-content__card__title">Take OUT</dt>
+                <dd class="p-content__card__sentence">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl>
+              <dl class="p-content__card">
+                <dt class="p-content__card__title">Take OUT</dt>
+                <dd class="p-content__card__sentence">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+              </dl>
+            </div>
+          </li>
+
+          <li class="p-content p-content--img-eatin"> <!-- flex column space-between タテ並び両端から均等に配置 -->
+            <h2 class="p-content__title">Eat In</h2>
+            <div class="p-content__cards">
+              <dl class="p-content__card">
+                <dt class="p-content__card__title">Eat In</dt>
+                <dd class="p-content__card__sentence">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+              </dl>
+              <dl class="p-content__card">
+                <dt class="p-content__card__title">Eat In</dt>
+                <dd class="p-content__card__sentence">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+
+      </article>
     </main>
 
     <footer>
