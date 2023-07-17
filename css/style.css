@@ -127,4 +127,214 @@ li {
   padding: 0 16px 16px 4.26vw;
   font-weight: normal;
 }
+
+.p-access {
+  position: relative;
+  height: 690px;
+  padding: 42px 10.66vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+.p-access__title {
+  color: #FFFFFF;
+  font-family: "M PLUS 1p";
+  font-size: 30px;
+}
+.p-access__title::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 75px;
+  margin-top: 13px;
+  margin-bottom: 15px;
+  background-color: #FFFFFF;
+}
+.p-access__sentence {
+  color: #FFFFFF;
+  font-family: "M PLUS 1p";
+  font-size: 14px;
+  line-height: 33px;
+}
+.p-access__layer {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  height: 415px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.p-access__map {
+  position: absolute;
+  z-index: -200;
+  top: 0;
+  left: 0;
+}
+
+.u-mt0 {
+  margin-top: 0;
+}
+
+.u-mb0 {
+  margin-bottom: 0px;
+}
+
+.u-mt5 {
+  margin-top: 5;
+}
+
+.u-mb5 {
+  margin-bottom: 5px;
+}
+
+.u-mt10 {
+  margin-top: 10;
+}
+
+.u-mb10 {
+  margin-bottom: 10px;
+}
+
+.u-mt15 {
+  margin-top: 15;
+}
+
+.u-mb15 {
+  margin-bottom: 15px;
+}
+
+.u-mt20 {
+  margin-top: 20;
+}
+
+.u-mb20 {
+  margin-bottom: 20px;
+}
+
+.u-mt25 {
+  margin-top: 25;
+}
+
+.u-mb25 {
+  margin-bottom: 25px;
+}
+
+.u-mt30 {
+  margin-top: 30;
+}
+
+.u-mb30 {
+  margin-bottom: 30px;
+}
+
+.u-mt35 {
+  margin-top: 35;
+}
+
+.u-mb35 {
+  margin-bottom: 35px;
+}
+
+.u-mt40 {
+  margin-top: 40;
+}
+
+.u-mb40 {
+  margin-bottom: 40px;
+}
+
+.u-mt45 {
+  margin-top: 45;
+}
+
+.u-mb45 {
+  margin-bottom: 45px;
+}
+
+.u-mt50 {
+  margin-top: 50;
+}
+
+.u-mb50 {
+  margin-bottom: 50px;
+}
+
+.u-mt55 {
+  margin-top: 55;
+}
+
+.u-mb55 {
+  margin-bottom: 55px;
+}
+
+.u-mt60 {
+  margin-top: 60;
+}
+
+.u-mb60 {
+  margin-bottom: 60px;
+}
+
+.u-mt65 {
+  margin-top: 65;
+}
+
+.u-mb65 {
+  margin-bottom: 65px;
+}
+
+.u-mt70 {
+  margin-top: 70;
+}
+
+.u-mb70 {
+  margin-bottom: 70px;
+}
+
+.u-mt75 {
+  margin-top: 75;
+}
+
+.u-mb75 {
+  margin-bottom: 75px;
+}
+
+.u-mt80 {
+  margin-top: 80;
+}
+
+.u-mb80 {
+  margin-bottom: 80px;
+}
+
+.u-mt85 {
+  margin-top: 85;
+}
+
+.u-mb85 {
+  margin-bottom: 85px;
+}
+
+.u-mt90 {
+  margin-top: 90;
+}
+
+.u-mb90 {
+  margin-bottom: 90px;
+}
+
+.u-mt95 {
+  margin-top: 95;
+}
+
+.u-mb95 {
+  margin-bottom: 95px;
+}
+
+.u-mt100 {
+  margin-top: 100;
+}
+
+.u-mb100 {
+  margin-bottom: 100px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variable";
+
+.p-access {
+  @include mixin.dbg-border(lightgreen, 3, 1);
+  position: relative;
+  height: 690px;
+  padding: 42px 10.66vw;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__title {
+    @include mixin.dbg-border(lightgreen, 3, 1);
+    color: variable.$color-white;
+    font-family: 'M PLUS 1p';
+    font-size: 30px;
+
+    &::after {
+      @include mixin.dbg-border(lightgreen, 3, 1);
+      display: block; // 擬似要素はインライン要素のためwidth, height指定できるよう変更
+      content: ""; // before, after擬似要素で必須
+      height: 2px;
+      width: 75px;
+      margin-top: 13px;
+      margin-bottom: 15px;
+      background-color: variable.$color-white;
+    }
+  }
+
+  &__sentence {
+    @include mixin.dbg-border(lightgreen, 3, 1);
+    color: variable.$color-white;
+    font-family: 'M PLUS 1p';
+    font-size: 14px;
+    line-height: 33px;
+  }
+
+  &__layer {
+    @include mixin.dbg-border(red, 3, 1);
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    height: 415px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  &__map {
+    @include mixin.dbg-border(blue, 6, 1);
+    position: absolute;
+    z-index: -200;
+    top: 0;
+    left: 0;
+  }
+
+}
+
