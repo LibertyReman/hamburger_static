@@ -25,6 +25,36 @@ li {
   font-size: 40px;
 }
 
+.l-footer {
+  height: 150px;
+  padding-top: 16px;
+  background: no-repeat url("../../img/footerbg.png");
+}
+.l-footer__info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  color: #FFFFFF;
+  font-family: "M PLUS 1p";
+  font-size: 18px;
+  font-weight: normal;
+}
+.l-footer__info li + li {
+  position: relative;
+  padding-left: 20px;
+}
+.l-footer__info li + li::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+  height: 1em;
+  border-left: 1px solid #FFFFFF;
+}
+
 .c-form__text {
   border: 1px solid black;
   background-color: white;
@@ -168,6 +198,15 @@ li {
   z-index: -200;
   top: 0;
   left: 0;
+}
+
+.p-copyright {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: "M PLUS 1p";
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .u-mt0 {

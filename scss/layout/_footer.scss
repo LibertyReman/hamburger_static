@@ -1,0 +1,45 @@
+@use "../foundation/mixin";
+@use "../foundation/variable";
+
+.l-footer {
+	@include mixin.dbg-border(blue, 3, 1);
+	height  : 150px;
+  padding-top: 16px;
+  background: no-repeat url("../../img/footerbg.png");
+
+  &__info {
+    @include mixin.dbg-border(red, 3, 1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    color: variable.$color-white;
+    font-family: 'M PLUS 1p';
+    font-size: 18px;
+    font-weight: normal;
+
+    li {
+      @include mixin.dbg-border(black, 3, 1);
+
+      + li {
+        position: relative;
+        padding-left: 20px;
+      }
+      + li::before {
+        @include mixin.dbg-border(lightgreen, 3, 1);
+        display: block; // 擬似要素はインライン要素のためwidth, height指定できるよう変更
+        position: absolute;
+        content: ""; // before, after擬似要素で必須
+        top: 0;
+        bottom: 0;
+        left: 10px; // padding-left / 2
+        margin: auto;
+        height: 1em;
+        border-left: 1px solid variable.$color-white;
+      }
+    }
+
+  }
+}
+
+
+

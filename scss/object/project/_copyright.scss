@@ -1,0 +1,13 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variable";
+
+.p-copyright {
+	@include mixin.dbg-border(black, 3, 1);
+  display: flex;
+  justify-content: center;
+  color: variable.$color-white;
+  font-family: "M PLUS 1p";
+  font-size: 14px;
+  font-weight: normal;
+}
+

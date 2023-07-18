@@ -11,7 +11,7 @@
 // Layout
 // ==========================================================================
 @forward "layout/header";
-//@forward "layout/footer";
+@forward "layout/footer";
 
 // ==========================================================================
 // Object
@@ -32,8 +32,7 @@
 @forward "object/project/mainvisual";
 @forward "object/project/content";
 @forward "object/project/access";
-//@forward "object/project/copyright";
-//@forward "object/project/hamburger";
+@forward "object/project/copyright";
 
 // ---------------------------------------
 // Utility
