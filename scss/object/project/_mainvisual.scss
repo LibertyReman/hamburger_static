@@ -4,7 +4,7 @@
 .p-mainvisual {
   @include mixin.dbg-border(green, 3, 1);
   display: flex;
-  align-items: center; // 真ん中
+  align-items: center; // タテ真ん中
   height: 285px;
   background: no-repeat center/cover url("../../img/mainvisual-sp.jpg");
 

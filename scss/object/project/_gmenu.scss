@@ -2,7 +2,7 @@
 
 
 .p-gmenu {
-	@include mixin.dbg-border(lightgreen, 3, 1);
+  @include mixin.dbg-border(lightgreen, 3, 1);
   display: flex;
   justify-content: flex-end;
   width: 100%;
