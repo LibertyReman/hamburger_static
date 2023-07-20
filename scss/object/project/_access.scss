@@ -4,7 +4,7 @@
 .p-access {
   @include mixin.dbg-border(lightgreen, 3, 1);
   position: relative;
-  height: 690px;
+  min-height: 690px; // テキストがボックスからはみ出さないように設定
   padding: 42px 10.66vw;
   background: rgba(0, 0, 0, 0.3);
 

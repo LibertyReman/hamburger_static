@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   font-weight: bold;
 }
@@ -82,6 +83,7 @@ li {
 }
 .p-search__text {
   width: 57.6vw;
+  min-width: 200px;
   margin-right: 16px;
   padding-left: 38px;
   border: 1px solid #707070;
@@ -93,6 +95,7 @@ li {
 }
 .p-search__submit {
   width: 24vw;
+  min-width: 50px;
   border: 1px solid #707070;
   border-radius: 10px;
   background-color: #F2EDE9;
@@ -118,7 +121,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 642px;
   margin: 5.33vw;
 }
 .p-content--img-takeout {
@@ -139,6 +141,7 @@ li {
   height: 4px;
   width: 34px;
   margin-top: 17px;
+  margin-bottom: 216px;
   background-color: #FFFFFF;
 }
 .p-content__card {
@@ -160,7 +163,7 @@ li {
 
 .p-access {
   position: relative;
-  height: 690px;
+  min-height: 690px;
   padding: 42px 10.66vw;
   background: rgba(0, 0, 0, 0.3);
 }

@@ -1,6 +1,7 @@
 @use "../foundation/mixin";
 
 body {
+  min-width: 320px; // スマートフォン 最小サイズ
   font-family: 'Roboto', 'M PLUS 1p', sans-serif;
   font-weight: bold;
 }

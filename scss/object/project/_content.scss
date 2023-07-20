@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column; // タテ並び
   justify-content: space-between; // 両端から均等に配置
-  height: 642px;
   margin: 5.33vw;
 
   &--img-takeout {
@@ -30,6 +29,7 @@
       height: 4px;
       width: 34px;
       margin-top: 17px;
+      margin-bottom: 216px;
       background-color: variable.$color-white;
     }
   }

@@ -9,6 +9,7 @@
   &__text {
     @include mixin.dbg-border(black, 3, 0);
     width: 57.6vw;
+    min-width: 200px;
     margin-right: 16px;
     padding-left: 38px;
     border: 1px solid variable.$color-gray;
@@ -22,6 +23,7 @@
   &__submit {
     @include mixin.dbg-border(blue, 3, 0);
     width: 24vw;
+    min-width: 50px;
     border: 1px solid variable.$color-gray;
     border-radius: 10px;
     background-color: variable.$color-brown;
