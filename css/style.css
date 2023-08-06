@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", "M PLUS 1p", sans-serif;
   font-weight: bold;
 }
+body.is-open {
+  position: fixed;
+}
 
 a {
   color: inherit;
@@ -68,13 +71,85 @@ li {
 .p-gmenu {
   display: flex;
   justify-content: flex-end;
+  position: relative;
   width: 100%;
-  padding: 8px 8px 11px 0px;
 }
-
-.p-menu-button span {
+.p-gmenu__menu-opbtn {
+  margin: 8px 8px 11px 0px;
+}
+.p-gmenu__menu-opbtn span {
   color: #707070;
   font-size: 20px;
+}
+.p-gmenu__layer.is-open {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms 0s ease;
+}
+.p-gmenu__content {
+  position: fixed;
+  z-index: 100;
+  left: 100%;
+  width: 87.46%;
+  height: 100%;
+  background-color: #F2EDE9;
+  transition: all 500ms 0s ease;
+}
+.p-gmenu__content.is-open {
+  left: 12.54%;
+  overflow-y: scroll;
+}
+.p-gmenu__content__menu-clbtn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 8px 8px 134px auto;
+}
+.p-gmenu__content__menu-clbtn::before, .p-gmenu__content__menu-clbtn::after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 5px;
+  background-color: #707070;
+}
+.p-gmenu__content__menu-clbtn::before {
+  top: 18px;
+  transform: rotate(135deg);
+}
+.p-gmenu__content__menu-clbtn::after {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+.p-gmenu__content__menu-clbtn span {
+  font-size: 0px;
+}
+.p-gmenu__content > ul > li {
+  padding-bottom: 40px;
+}
+.p-gmenu__content > ul > li > a {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-left: 46px;
+  color: #707070;
+  font-family: "M PLUS 1p";
+  font-size: 24px;
+}
+.p-gmenu__content > ul > li > a + ul a {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 66px;
+  color: #707070;
+  font-family: "M PLUS 1p";
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .p-search {
