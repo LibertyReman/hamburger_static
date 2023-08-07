@@ -11,7 +11,6 @@
   &__title {
     @include mixin.dbg-border(lightgreen, 3, 1);
     color: variable.$color-white;
-    font-family: 'M PLUS 1p';
     font-size: 30px;
 
     &::after {
@@ -29,7 +28,6 @@
   &__sentence {
     @include mixin.dbg-border(lightgreen, 3, 1);
     color: variable.$color-white;
-    font-family: 'M PLUS 1p';
     font-size: 14px;
     line-height: 33px;
   }

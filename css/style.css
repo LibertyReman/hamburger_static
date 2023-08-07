@@ -39,7 +39,6 @@ li {
   justify-content: center;
   margin-bottom: 70px;
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
   font-size: 18px;
   font-weight: normal;
 }
@@ -139,7 +138,6 @@ li {
   margin-bottom: 40px;
   margin-left: 46px;
   color: #707070;
-  font-family: "M PLUS 1p";
   font-size: 24px;
 }
 .p-gmenu__content > ul > li > a + ul a {
@@ -147,7 +145,6 @@ li {
   margin-bottom: 20px;
   margin-left: 66px;
   color: #707070;
-  font-family: "M PLUS 1p";
   font-size: 20px;
   font-weight: normal;
 }
@@ -175,7 +172,6 @@ li {
   border-radius: 10px;
   background-color: #F2EDE9;
   color: #707070;
-  font-family: "M PLUS 1p";
 }
 
 .p-mainvisual {
@@ -188,7 +184,6 @@ li {
   margin-top: 12px;
   margin-left: 6.66vw;
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
   font-size: 36px;
 }
 
@@ -224,7 +219,6 @@ li {
   color: #3C2A10;
   background-color: #FFFFFF;
   opacity: 0.8;
-  font-family: "M PLUS 1p";
 }
 .p-content__card__title {
   padding: 16px 0 8px 4.26vw;
@@ -244,7 +238,6 @@ li {
 }
 .p-access__title {
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
   font-size: 30px;
 }
 .p-access__title::after {
@@ -258,7 +251,6 @@ li {
 }
 .p-access__sentence {
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
   font-size: 14px;
   line-height: 33px;
 }
@@ -282,7 +274,6 @@ li {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
   font-size: 14px;
   font-weight: normal;
 }
