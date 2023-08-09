@@ -20,7 +20,7 @@
 // Component
 // ---------------------------------------
 @forward "object/component/form";
-//@forward "object/component/button";
+@forward "object/component/button";
 //@forward "object/component/grid";
 
 // ---------------------------------------
@@ -30,6 +30,9 @@
 @forward "object/project/search";
 @forward "object/project/mainvisual";
 @forward "object/project/content";
+@forward "object/project/sentence";
+@forward "object/project/card";
+@forward "object/project/pagenavigation";
 @forward "object/project/access";
 @forward "object/project/copyright";
 

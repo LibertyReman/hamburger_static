@@ -25,7 +25,7 @@
     }
   }
 
-  &__sentence {
+  &__text {
     @include mixin.dbg-border(lightgreen, 3, 1);
     color: variable.$color-white;
     font-size: 14px;

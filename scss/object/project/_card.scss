@@ -1,0 +1,50 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variable";
+
+.p-card {
+  @include mixin.dbg-border(blue, 3, 1);
+  margin: 25px 5.33vw;
+  color: variable.$color-white;
+
+  &__img {
+    @include mixin.dbg-border(red, 3, 1);
+    height: 230px;
+    background: no-repeat center/cover url("../../img/card.jpg");
+  }
+
+  &__content {
+    @include mixin.dbg-border(pink, 5, 1);
+    padding: 32px 4.53vw 43px;
+    background-color: variable.$color-darkorange;
+
+    &__title {
+      @include mixin.dbg-border(yellow, 3, 1);
+      margin-bottom: 21px;
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      @include mixin.dbg-border(blue, 3, 1);
+      margin-bottom: 7px;
+      font-size: 16px;
+    }
+
+    &__text {
+      @include mixin.dbg-border(red, 3, 1);
+      margin-bottom: 40px;
+      font-weight: normal;
+    }
+
+    &__button {
+      @include mixin.dbg-border(red, 3, 1);
+      height: 43px;
+      width: 43.46vw;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 22px;
+      color: variable.$color-gray;
+    }
+  }
+
+}
+

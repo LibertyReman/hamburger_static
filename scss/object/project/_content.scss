@@ -34,11 +34,11 @@
     }
   }
 
-  &__cards {
+  &__boxes {
     @include mixin.dbg-border(blue, 10, 1);
   }
 
-  &__card {
+  &__box {
     @include mixin.dbg-border(red, 3, 1);
     margin: 0 4.26vw 16px;
     color: variable.$color-black;
@@ -50,7 +50,7 @@
       font-size: 22px;
       line-height: 24px;
     }
-    &__sentence {
+    &__text {
       @include mixin.dbg-border(black, 3, 1);
       padding: 0 16px 16px 4.26vw;
       font-weight: normal;

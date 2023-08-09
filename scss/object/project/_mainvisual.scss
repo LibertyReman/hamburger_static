@@ -4,16 +4,33 @@
 .p-mainvisual {
   @include mixin.dbg-border(green, 3, 1);
   display: flex;
+  flex-direction: column; // タテ並び
+  justify-content: center; // ヨコ真ん中
   align-items: center; // タテ真ん中
   height: 285px;
-  background: no-repeat center/cover url("../../img/mainvisual-sp.jpg");
+  background: no-repeat center/cover url("../../img/mainvisual-sp@2x.jpg");
+
+  &--img-archive {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../img/page-title_arcive@2x.jpg");
+  }
 
   &__title {
-    @include mixin.dbg-border(lightgreen, 3, 1);
-    margin-top: 12px;
+    @include mixin.dbg-border(blue, 3, 1);
+    margin-right: auto;
     margin-left: 6.66vw;
     color: variable.$color-white;
     font-size: 36px;
+  }
+
+  &__subtitle {
+    @include mixin.dbg-border(red, 3, 1);
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: 6.66vw;
+    color: variable.$color-white;
   }
 
 }

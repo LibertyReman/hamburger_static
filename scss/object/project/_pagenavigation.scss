@@ -1,0 +1,13 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variable";
+
+.p-pagenavigation {
+  @include mixin.dbg-border(black, 3, 1);
+  display: flex;
+  justify-content: space-between; // 両端から均等に配置
+  padding: 35px 5.33vw 30px;
+  color: variable.$color-gray;
+  font-size: 16px;
+  font-weight: normal;
+}
+

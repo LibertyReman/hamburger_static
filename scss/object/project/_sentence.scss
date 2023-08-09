@@ -1,0 +1,22 @@
+@use "../../foundation/mixin";
+@use "../../foundation/variable";
+
+.p-sentence {
+  @include mixin.dbg-border(yellow, 3, 1);
+  padding: 32px 5.86vw 0px;
+  color: variable.$color-black;
+
+  &__title {
+    @include mixin.dbg-border(blue, 3, 1);
+    margin-bottom: 25px;
+    font-size: 28px;
+
+  }
+
+  &__text {
+    @include mixin.dbg-border(red, 3, 1);
+    font-weight: normal;
+  }
+
+}
+
