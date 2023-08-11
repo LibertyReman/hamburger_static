@@ -17,6 +17,11 @@
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../img/page-title_arcive@2x.jpg");
   }
 
+  &--img-single {
+    height: 225px;
+    background: no-repeat center/cover url("../../img/single.jpg");
+  }
+
   &__title {
     @include mixin.dbg-border(blue, 3, 1);
     margin-right: auto;
