@@ -4,9 +4,12 @@
 .p-access {
   @include mixin.dbg-border(lightgreen, 3, 1);
   position: relative;
-  min-height: 690px; // テキストがボックスからはみ出さないように設定
   padding: 42px 10.66vw;
   background: rgba(0, 0, 0, 0.3);
+
+  @include mixin.breakpoint("tablet") {
+    padding: 42px 5.33vw;
+  }
 
   &__title {
     @include mixin.dbg-border(lightgreen, 3, 1);
@@ -30,6 +33,10 @@
     color: variable.$color-white;
     font-size: 14px;
     line-height: 33px;
+
+    @include mixin.breakpoint("wide") {
+      width: 36.30vw;
+    }
   }
 
   &__layer {
@@ -41,6 +48,14 @@
     height: 415px;
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
+
+    @include mixin.breakpoint("tablet") {
+      height: 100%;
+    }
+
+    @include mixin.breakpoint("wide") {
+      width: 49.47vw;
+    }
   }
 
   &__map {

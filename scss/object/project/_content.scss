@@ -7,6 +7,11 @@
   flex-direction: column; // タテ並び
   justify-content: space-between; // 両端から均等に配置
   margin-bottom: 20px;
+  width: 100%;
+
+  @include mixin.breakpoint("tablet") {
+    margin-bottom: 0;
+  }
 
   &--img-takeout {
     background: no-repeat center/cover url("../../img/takeout.jpg");

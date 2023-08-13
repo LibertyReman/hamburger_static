@@ -4,14 +4,16 @@
 .l-main {
   @include mixin.dbg-border(blue, 3, 1);
 
-  &__contents-wrapper {
-    display: flex;
-    flex-direction: column; // タテ並び
-    margin: 5.33vw;
+  &__wrapper {
+    padding: 5.33vw;
 
-    @include mixin.breakpoint("tablet") {
-      flex-direction: row; // ヨコ並び
+    &__flex {
+      display: flex;
+      flex-direction: column; // タテ並び
+
+      @include mixin.breakpoint("tablet") {
+        flex-direction: row; // ヨコ並び
+      }
     }
   }
-
 }

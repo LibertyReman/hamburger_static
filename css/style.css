@@ -32,7 +32,7 @@ li {
 .l-main__contents-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 5.33vw;
+  padding: 5.33vw;
 }
 @media (min-width: 601px) {
   .l-main__contents-wrapper {
@@ -244,6 +244,12 @@ li {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 601px) {
+  .p-content {
+    margin-bottom: 0;
+  }
 }
 .p-content--img-takeout {
   background: no-repeat center/cover url("../../img/takeout.jpg");
@@ -456,9 +462,13 @@ li {
 
 .p-access {
   position: relative;
-  min-height: 690px;
   padding: 42px 10.66vw;
   background: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 601px) {
+  .p-access {
+    padding: 42px 5.33vw;
+  }
 }
 .p-access__title {
   color: #FFFFFF;
@@ -478,6 +488,11 @@ li {
   font-size: 14px;
   line-height: 33px;
 }
+@media (min-width: 1001px) {
+  .p-access__text {
+    width: 36.3vw;
+  }
+}
 .p-access__layer {
   position: absolute;
   z-index: -100;
@@ -486,6 +501,16 @@ li {
   height: 415px;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 601px) {
+  .p-access__layer {
+    height: 100%;
+  }
+}
+@media (min-width: 1001px) {
+  .p-access__layer {
+    width: 49.47vw;
+  }
 }
 .p-access__map {
   position: absolute;
