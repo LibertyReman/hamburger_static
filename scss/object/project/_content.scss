@@ -6,10 +6,15 @@
   display: flex;
   flex-direction: column; // タテ並び
   justify-content: space-between; // 両端から均等に配置
-  margin: 5.33vw;
+  margin-bottom: 20px;
 
   &--img-takeout {
     background: no-repeat center/cover url("../../img/takeout.jpg");
+
+    @include mixin.breakpoint("tablet") {
+      margin-right: 4.79vw;
+    }
+
   }
   &--img-eatin {
     background: no-repeat center/cover url("../../img/eatin.jpg");

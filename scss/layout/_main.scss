@@ -1,0 +1,17 @@
+@use "../foundation/mixin";
+@use "../foundation/variable";
+
+.l-main {
+  @include mixin.dbg-border(blue, 3, 1);
+
+  &__contents-wrapper {
+    display: flex;
+    flex-direction: column; // タテ並び
+    margin: 5.33vw;
+
+    @include mixin.breakpoint("tablet") {
+      flex-direction: row; // ヨコ並び
+    }
+  }
+
+}

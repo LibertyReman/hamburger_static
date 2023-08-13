@@ -15,8 +15,8 @@ $clbtn-height: 5px;
   width: 100%;
 
   &__menu-opbtn {
-    @include mixin.dbg-border(lightgreen, 5, 1);
-    margin: 8px 8px 11px 0px;
+    @include mixin.dbg-border(green, 3, 1);
+    margin: 8px 2.13vw 11px 0px;
 
     span {
       @include mixin.dbg-border(black, 1, 1);

@@ -10,6 +10,10 @@
   height: 285px;
   background: no-repeat center/cover url("../../img/mainvisual-sp@2x.jpg");
 
+  @include mixin.breakpoint("tablet") {
+    background: no-repeat center/cover url("../../img/mainvisual-tablet.jpg");
+  }
+
   &--img-archive {
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,6 +37,11 @@
     margin-left: 6.66vw;
     color: variable.$color-white;
     font-size: 36px;
+
+    @include mixin.breakpoint("tablet") {
+      margin-left: 10.31vw;
+    }
+
   }
 
   &__subtitle {
