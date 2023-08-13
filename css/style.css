@@ -199,6 +199,10 @@ li {
   height: 225px;
   background: no-repeat center/cover url("../../img/single.jpg");
 }
+.p-mainvisual--img-page {
+  height: 225px;
+  background: no-repeat center/cover url("../../img/page.jpg");
+}
 .p-mainvisual__title {
   margin-right: auto;
   margin-left: 6.66vw;
