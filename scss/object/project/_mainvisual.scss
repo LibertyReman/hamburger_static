@@ -30,11 +30,21 @@
   &--img-single {
     height: 225px;
     background: no-repeat center/cover url("../../img/single.jpg");
+
+    @include mixin.breakpoint("tablet") {
+      height: 505px;
+      background: no-repeat center/cover url("../../img/single-tablet.jpg");
+    }
   }
 
   &--img-page {
     height: 225px;
     background: no-repeat center/cover url("../../img/page.jpg");
+
+    @include mixin.breakpoint("tablet") {
+      height: 505px;
+      background: no-repeat center/cover url("../../img/page-tablet.jpg");
+    }
   }
 
   &__title {

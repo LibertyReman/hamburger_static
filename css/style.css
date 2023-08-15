@@ -237,9 +237,21 @@ li {
   height: 225px;
   background: no-repeat center/cover url("../../img/single.jpg");
 }
+@media (min-width: 601px) {
+  .p-mainvisual--img-single {
+    height: 505px;
+    background: no-repeat center/cover url("../../img/single-tablet.jpg");
+  }
+}
 .p-mainvisual--img-page {
   height: 225px;
   background: no-repeat center/cover url("../../img/page.jpg");
+}
+@media (min-width: 601px) {
+  .p-mainvisual--img-page {
+    height: 505px;
+    background: no-repeat center/cover url("../../img/page-tablet.jpg");
+  }
 }
 .p-mainvisual__title {
   margin-right: auto;
