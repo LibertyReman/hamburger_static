@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   min-width: 320px;
   font-family: "Roboto", "M PLUS 1p", sans-serif;
@@ -29,13 +30,15 @@ li {
   font-size: 40px;
 }
 
-.l-main__contents-wrapper {
-  display: flex;
-  flex-direction: column;
+.l-main__wrapper {
   padding: 5.33vw;
 }
+.l-main__wrapper__flex {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 601px) {
-  .l-main__contents-wrapper {
+  .l-main__wrapper__flex {
     flex-direction: row;
   }
 }
@@ -117,9 +120,19 @@ li {
   background-color: #F2EDE9;
   transition: all 500ms 0s ease;
 }
+@media (min-width: 601px) {
+  .p-gmenu__content {
+    width: 44%;
+  }
+}
 .p-gmenu__content.is-open {
   left: 12.54%;
   overflow-y: scroll;
+}
+@media (min-width: 601px) {
+  .p-gmenu__content.is-open {
+    left: 56%;
+  }
 }
 .p-gmenu__content__menu-clbtn {
   display: block;
@@ -204,6 +217,8 @@ li {
 }
 @media (min-width: 601px) {
   .p-mainvisual {
+    flex-direction: row;
+    justify-content: start;
     background: no-repeat center/cover url("../../img/mainvisual-tablet.jpg");
   }
 }
@@ -212,6 +227,11 @@ li {
   background-size: cover;
   background-position: left;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/page-title_arcive@2x.jpg");
+}
+@media (min-width: 601px) {
+  .p-mainvisual--img-archive {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/page-title_arcive-tablet.jpg");
+  }
 }
 .p-mainvisual--img-single {
   height: 225px;
@@ -229,6 +249,7 @@ li {
 }
 @media (min-width: 601px) {
   .p-mainvisual__title {
+    margin-right: 0;
     margin-left: 10.31vw;
   }
 }
@@ -237,6 +258,11 @@ li {
   margin-right: auto;
   margin-left: 6.66vw;
   color: #FFFFFF;
+}
+@media (min-width: 601px) {
+  .p-mainvisual__subtitle {
+    margin: 6px auto 0 19px;
+  }
 }
 
 .p-content {
@@ -294,7 +320,7 @@ li {
 }
 
 .p-sentence {
-  padding: 32px 5.33vw 0px;
+  padding: 32px 0 0;
   color: #3C2A10;
 }
 .p-sentence h2 {
@@ -419,16 +445,36 @@ li {
 }
 
 .p-card {
-  margin: 25px 5.33vw;
+  margin: 25px 0;
   color: #FFFFFF;
+}
+@media (min-width: 601px) {
+  .p-card {
+    display: flex;
+  }
 }
 .p-card__img {
   height: 230px;
-  background: no-repeat center/cover url("../../img/card.jpg");
+  width: 100%;
+  background: no-repeat left/cover url("../../img/card.jpg");
+}
+@media (min-width: 601px) {
+  .p-card__img {
+    height: auto;
+    width: 50%;
+    background: no-repeat left/cover url("../../img/card-tablet.jpg");
+  }
 }
 .p-card__content {
+  width: 100%;
   padding: 32px 4.53vw 43px;
   background-color: #3C2B1C;
+}
+@media (min-width: 601px) {
+  .p-card__content {
+    height: auto;
+    width: 50%;
+  }
 }
 .p-card__content__title {
   margin-bottom: 21px;
@@ -450,14 +496,80 @@ li {
   border-radius: 22px;
   color: #707070;
 }
+@media (min-width: 601px) {
+  .p-card__content__button {
+    width: 19.54vw;
+  }
+}
 
 .p-pagenavigation {
   display: flex;
   justify-content: space-between;
-  padding: 35px 5.33vw 30px;
+  align-items: center;
+  padding: 35px 0 30px;
   color: #707070;
   font-size: 16px;
   font-weight: normal;
+}
+@media (min-width: 601px) {
+  .p-pagenavigation {
+    justify-content: center;
+  }
+}
+.p-pagenavigation__info {
+  display: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+@media (min-width: 601px) {
+  .p-pagenavigation__info {
+    display: block;
+  }
+}
+.p-pagenavigation__prev::after {
+  content: "前へ";
+}
+@media (min-width: 601px) {
+  .p-pagenavigation__prev::after {
+    content: "";
+  }
+}
+.p-pagenavigation__next::before {
+  content: "次へ";
+}
+@media (min-width: 601px) {
+  .p-pagenavigation__next::before {
+    content: "";
+  }
+}
+.p-pagenavigation__pages {
+  display: none;
+  font-weight: bold;
+}
+@media (min-width: 601px) {
+  .p-pagenavigation__pages {
+    display: flex;
+  }
+}
+.p-pagenavigation__pages li {
+  margin-right: 15px;
+  border: 1px solid #707070;
+}
+.p-pagenavigation__pages li:first-child {
+  margin-left: 15px;
+}
+.p-pagenavigation__pages li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+@media (min-width: 601px) {
+  .p-pagenavigation__pages__current {
+    background-color: #707070;
+    color: #FFFFFF;
+  }
 }
 
 .p-access {
