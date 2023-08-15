@@ -302,7 +302,7 @@ li {
 }
 .p-content__title {
   padding-top: 13px;
-  padding-left: 4vw;
+  padding-left: 16px;
   color: #FFFFFF;
   font-size: 41px;
 }
@@ -315,19 +315,24 @@ li {
   margin-bottom: 216px;
   background-color: #FFFFFF;
 }
+@media (min-width: 601px) {
+  .p-content__title::after {
+    margin-top: 25px;
+  }
+}
 .p-content__box {
-  margin: 0 4.26vw 16px;
+  margin: 0 16px 16px;
   color: #3C2A10;
   background-color: #FFFFFF;
   opacity: 0.8;
 }
 .p-content__box__title {
-  padding: 16px 0 8px 4.26vw;
+  padding: 16px 0 8px 16px;
   font-size: 22px;
   line-height: 24px;
 }
 .p-content__box__text {
-  padding: 0 16px 16px 4.26vw;
+  padding: 0 16px 16px 16px;
   font-weight: normal;
 }
 

@@ -28,7 +28,7 @@
   &__title {
     @include mixin.dbg-border(lightgreen, 3, 1);
     padding-top: 13px;
-    padding-left: 4vw;
+    padding-left: 16px;
     color: variable.$color-white;
     font-size: 41px;
 
@@ -39,8 +39,12 @@
       height: 4px;
       width: 34px;
       margin-top: 17px;
-      margin-bottom: 216px;
+      margin-bottom: 216px; // boxが大きくなった際の隙間を確保
       background-color: variable.$color-white;
+
+      @include mixin.breakpoint("tablet") {
+        margin-top: 25px;
+      }
     }
   }
 
@@ -50,19 +54,19 @@
 
   &__box {
     @include mixin.dbg-border(red, 3, 1);
-    margin: 0 4.26vw 16px;
+    margin: 0 16px 16px;
     color: variable.$color-black;
     background-color: variable.$color-white;
     opacity: 0.8;
     &__title {
       @include mixin.dbg-border(blue, 3, 1);
-      padding: 16px 0 8px 4.26vw;
+      padding: 16px 0 8px 16px;
       font-size: 22px;
       line-height: 24px;
     }
     &__text {
       @include mixin.dbg-border(black, 3, 1);
-      padding: 0 16px 16px 4.26vw;
+      padding: 0 16px 16px 16px;
       font-weight: normal;
     }
   }
