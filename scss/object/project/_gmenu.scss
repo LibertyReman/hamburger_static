@@ -2,7 +2,8 @@
 @use "../../foundation/mixin";
 @use "../../foundation/variable";
 
-$menu-width: 87.46%;
+$menu-width-sp: 87.46%;
+$menu-width-tablet: 44%;
 $clbtn-width: 40px;
 $clbtn-height: 5px;
 
@@ -42,14 +43,22 @@ $clbtn-height: 5px;
     position: fixed;  // ウィンドウ左上端で固定
     z-index: 100; // 1番上に表示する
     left: 100%; // 左端(0)から右にX移動
-    width: $menu-width;
+    width: $menu-width-sp;
     height: 100%;
     background-color: variable.$color-brown;
     transition: all 500ms 0s ease;
 
+    @include mixin.breakpoint("tablet") {
+      width: $menu-width-tablet;
+    }
+
     &.is-open {
-      left: 100% - $menu-width; // 左端(0)から右にX移動 100% -> X%
+      left: 100% - $menu-width-sp; // 左端(0)から右にX移動 100% -> X%
       overflow-y: scroll; // height(auto以外)の指定が必要
+
+      @include mixin.breakpoint("tablet") {
+        left: 100% - $menu-width-tablet; // 左端(0)から右にX移動 100% -> X%
+      }
     }
 
     &__menu-clbtn {
