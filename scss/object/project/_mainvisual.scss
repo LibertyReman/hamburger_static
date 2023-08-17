@@ -45,6 +45,11 @@
       height: 505px;
       background: no-repeat center/cover url("../../img/single-tablet.jpg");
     }
+
+    @include mixin.breakpoint("wide") {
+      height: 500px;
+      background: no-repeat center/cover url("../../img/single-pc.jpg");
+    }
   }
 
   &--img-page {
@@ -54,6 +59,11 @@
     @include mixin.breakpoint("tablet") {
       height: 505px;
       background: no-repeat center/cover url("../../img/page-tablet.jpg");
+    }
+
+    @include mixin.breakpoint("wide") {
+      height: 500px;
+      background: no-repeat center/cover url("../../img/page-pc.jpg");
     }
   }
 

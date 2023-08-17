@@ -131,12 +131,18 @@
     img {
       @include mixin.dbg-border(red, 3, 1);
       width: 38.6vw;
+      max-width: 581px;
     }
 
     p {
       width: 48vw;
       margin-bottom: 0;
       text-indent: 1em; // 字下げ
+
+      @include mixin.breakpoint("wide") {
+        width: 100%;
+        margin: 0 40px;
+      }
     }
   }
 
