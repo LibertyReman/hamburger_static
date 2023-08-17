@@ -21,6 +21,10 @@
       width: 50%;
       background: no-repeat left/cover url("../../img/card-tablet.jpg");
     }
+
+    @include mixin.breakpoint("wide") {
+      background: no-repeat left/cover url("../../img/card-pc.jpg");
+    }
   }
 
   &__content {
@@ -38,6 +42,10 @@
       @include mixin.dbg-border(yellow, 3, 1);
       margin-bottom: 21px;
       font-size: 20px;
+
+      @include mixin.breakpoint("wide") {
+        margin-bottom: 44px;
+      }
     }
 
     &__subtitle {
@@ -50,6 +58,10 @@
       @include mixin.dbg-border(red, 3, 1);
       margin-bottom: 40px;
       font-weight: normal;
+
+      @include mixin.breakpoint("wide") {
+        margin-bottom: 60px;
+      }
     }
 
     &__button {
@@ -63,6 +75,10 @@
 
       @include mixin.breakpoint("tablet") {
         width: 19.54vw;
+      }
+
+      @include mixin.breakpoint("wide") {
+        width: 15.20vw;
       }
     }
   }

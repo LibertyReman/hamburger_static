@@ -30,6 +30,11 @@
     @include mixin.breakpoint("tablet") {
       background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../img/page-title_arcive-tablet.jpg");
     }
+
+    @include mixin.breakpoint("wide") {
+      height: 239px;
+      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../img/page-title_arcive-pc.jpg");
+    }
   }
 
   &--img-single {

@@ -306,6 +306,12 @@ li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/page-title_arcive-tablet.jpg");
   }
 }
+@media (min-width: 1140px) {
+  .p-mainvisual--img-archive {
+    height: 239px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/page-title_arcive-pc.jpg");
+  }
+}
 .p-mainvisual--img-single {
   height: 225px;
   background: no-repeat center/cover url("../../img/single.jpg");
@@ -560,6 +566,11 @@ li {
     background: no-repeat left/cover url("../../img/card-tablet.jpg");
   }
 }
+@media (min-width: 1140px) {
+  .p-card__img {
+    background: no-repeat left/cover url("../../img/card-pc.jpg");
+  }
+}
 .p-card__content {
   width: 100%;
   padding: 32px 4.53vw 43px;
@@ -575,6 +586,11 @@ li {
   margin-bottom: 21px;
   font-size: 20px;
 }
+@media (min-width: 1140px) {
+  .p-card__content__title {
+    margin-bottom: 44px;
+  }
+}
 .p-card__content__subtitle {
   margin-bottom: 7px;
   font-size: 16px;
@@ -582,6 +598,11 @@ li {
 .p-card__content__text {
   margin-bottom: 40px;
   font-weight: normal;
+}
+@media (min-width: 1140px) {
+  .p-card__content__text {
+    margin-bottom: 60px;
+  }
 }
 .p-card__content__button {
   height: 43px;
@@ -594,6 +615,11 @@ li {
 @media (min-width: 601px) {
   .p-card__content__button {
     width: 19.54vw;
+  }
+}
+@media (min-width: 1140px) {
+  .p-card__content__button {
+    width: 15.2vw;
   }
 }
 
