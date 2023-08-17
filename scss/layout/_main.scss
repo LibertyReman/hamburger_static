@@ -4,6 +4,15 @@
 .l-main {
   @include mixin.dbg-border(blue, 3, 1);
 
+  @include mixin.breakpoint("wide") {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__body {
+    width: 100%;
+  }
+
   &__wrapper {
     padding: 5.33vw;
 

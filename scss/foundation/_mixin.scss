@@ -16,7 +16,7 @@ $dbg: 0;
 $devices: (
 	'tablet': '(min-width: 601px)', // 横幅が601px以上の時
 	'pc': '(min-width: 769px)',
-	'wide': '(min-width: 1001px)',
+	'wide': '(min-width: 1140px)', // PC画面のメニューサイズ調整
 	'full': '(min-width: 1201px)'
 );
 

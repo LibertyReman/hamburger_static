@@ -24,12 +24,33 @@ li {
   height: 215px;
   background-color: #FFF7EF;
 }
+@media (min-width: 1140px) {
+  .l-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .l-header__logo {
   margin-bottom: 40px;
   color: #707070;
   font-size: 40px;
 }
+@media (min-width: 1140px) {
+  .l-header__logo {
+    margin: 0 20px 0 65px;
+    font-size: 64px;
+  }
+}
 
+@media (min-width: 1140px) {
+  .l-main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.l-main__body {
+  width: 100%;
+}
 .l-main__wrapper {
   padding: 5.33vw;
 }
@@ -44,9 +65,10 @@ li {
 }
 
 .l-footer {
+  width: 100%;
   height: 150px;
   padding-top: 16px;
-  background: no-repeat url("../../img/footerbg.png");
+  background: no-repeat center/cover url("../../img/footerbg.jpg");
 }
 .l-footer__info {
   display: flex;
@@ -92,10 +114,16 @@ li {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  width: 100%;
+  height: 100%;
+  background-color: #FFF7EF;
 }
 .p-gmenu__menu-opbtn {
   margin: 8px 2.13vw 11px 0px;
+}
+@media (min-width: 1140px) {
+  .p-gmenu__menu-opbtn {
+    display: none;
+  }
 }
 .p-gmenu__menu-opbtn span {
   color: #707070;
@@ -125,6 +153,13 @@ li {
     width: 44%;
   }
 }
+@media (min-width: 1140px) {
+  .p-gmenu__content {
+    position: static;
+    width: 19.11vw;
+    min-width: 367px;
+  }
+}
 .p-gmenu__content.is-open {
   left: 12.54%;
   overflow-y: scroll;
@@ -140,6 +175,11 @@ li {
   width: 40px;
   height: 40px;
   margin: 8px 8px 134px auto;
+}
+@media (min-width: 1140px) {
+  .p-gmenu__content__menu-clbtn {
+    display: none;
+  }
 }
 .p-gmenu__content__menu-clbtn::before, .p-gmenu__content__menu-clbtn::after {
   display: block;
@@ -161,6 +201,17 @@ li {
 .p-gmenu__content__menu-clbtn span {
   font-size: 0px;
 }
+.p-gmenu__content__title {
+  display: none;
+}
+@media (min-width: 1140px) {
+  .p-gmenu__content__title {
+    display: block;
+    margin: 84px 0 90px 46px;
+    color: #707070;
+    font-size: 34px;
+  }
+}
 .p-gmenu__content > ul > li {
   padding-bottom: 40px;
 }
@@ -175,6 +226,7 @@ li {
   display: inline-block;
   margin-bottom: 20px;
   margin-left: 66px;
+  white-space: pre;
   color: #707070;
   font-size: 20px;
   font-weight: normal;
@@ -183,6 +235,11 @@ li {
 .p-search {
   display: flex;
   height: 46px;
+}
+@media (min-width: 1140px) {
+  .p-search {
+    margin-right: 31px;
+  }
 }
 .p-search__text {
   width: 57.6vw;
@@ -197,14 +254,24 @@ li {
   background-position: 9px center;
   background-size: 24px, 24px;
 }
+@media (min-width: 1140px) {
+  .p-search__text {
+    width: 20.62vw;
+  }
+}
 .p-search__submit {
   width: 24vw;
-  max-width: 136px;
   min-width: 50px;
+  max-width: 136px;
   border: 1px solid #707070;
   border-radius: 10px;
   background-color: #F2EDE9;
   color: #707070;
+}
+@media (min-width: 1140px) {
+  .p-search__submit {
+    width: 7.08vw;
+  }
 }
 
 .p-mainvisual {
@@ -220,6 +287,12 @@ li {
     flex-direction: row;
     justify-content: start;
     background: no-repeat center/cover url("../../img/mainvisual-tablet.jpg");
+  }
+}
+@media (min-width: 1140px) {
+  .p-mainvisual {
+    height: 530px;
+    background: no-repeat center/cover url("../../img/mainvisual-pc.jpg");
   }
 }
 .p-mainvisual--img-archive {
@@ -262,7 +335,7 @@ li {
 @media (min-width: 601px) {
   .p-mainvisual__title {
     margin-right: 0;
-    margin-left: 10.31vw;
+    margin-left: 86px;
   }
 }
 .p-mainvisual__subtitle {
@@ -318,6 +391,11 @@ li {
 @media (min-width: 601px) {
   .p-content__title::after {
     margin-top: 25px;
+  }
+}
+@media (min-width: 1140px) {
+  .p-content__title::after {
+    margin-bottom: 663px;
   }
 }
 .p-content__box {
@@ -450,7 +528,7 @@ li {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 1001px) {
+@media (min-width: 1140px) {
   .p-sentence__griditems {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -603,6 +681,11 @@ li {
   color: #FFFFFF;
   font-size: 30px;
 }
+@media (min-width: 1140px) {
+  .p-access__title {
+    width: 36.3vw;
+  }
+}
 .p-access__title::after {
   display: block;
   content: "";
@@ -617,7 +700,7 @@ li {
   font-size: 14px;
   line-height: 33px;
 }
-@media (min-width: 1001px) {
+@media (min-width: 1140px) {
   .p-access__text {
     width: 36.3vw;
   }
@@ -636,7 +719,7 @@ li {
     height: 100%;
   }
 }
-@media (min-width: 1001px) {
+@media (min-width: 1140px) {
   .p-access__layer {
     width: 49.47vw;
   }

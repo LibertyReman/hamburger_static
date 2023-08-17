@@ -45,6 +45,10 @@
       @include mixin.breakpoint("tablet") {
         margin-top: 25px;
       }
+
+      @include mixin.breakpoint("wide") {
+        margin-bottom: 663px; // boxが大きくなった際の隙間を確保
+      }
     }
   }
 

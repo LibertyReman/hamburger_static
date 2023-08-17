@@ -16,6 +16,10 @@
     color: variable.$color-white;
     font-size: 30px;
 
+    @include mixin.breakpoint("wide") {
+      width: 36.30vw;
+    }
+
     &::after {
       @include mixin.dbg-border(lightgreen, 3, 1);
       display: block; // 擬似要素はインライン要素のためwidth, height指定できるよう変更

@@ -16,6 +16,11 @@
     background: no-repeat center/cover url("../../img/mainvisual-tablet.jpg");
   }
 
+  @include mixin.breakpoint("wide") {
+    height: 530px;
+    background: no-repeat center/cover url("../../img/mainvisual-pc.jpg");
+  }
+
   &--img-archive {
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +61,7 @@
 
     @include mixin.breakpoint("tablet") {
       margin-right: 0;
-      margin-left: 10.31vw;
+      margin-left: 86px;
     }
 
   }
